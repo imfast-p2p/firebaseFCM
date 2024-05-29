@@ -10,7 +10,7 @@ const router = express.Router();
 
 router.post('/sendToAll', (req, res) => {
     var notification = {
-        'title': 'Title of notification',
+        'title': 'New Notification',
         'text': 'Subtitle'
     };
     console.log(req.body);
