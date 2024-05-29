@@ -1,9 +1,11 @@
 import express from 'express';
 import fetch from 'node-fetch';
+import cors from 'cors';
 
 const app = express();
 
 // Enable express.json() middleware
+app.use(cors());
 app.use(express.json());
 
 const router = express.Router();
